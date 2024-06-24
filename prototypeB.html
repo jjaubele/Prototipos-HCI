@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Chile - Realizar Transferencia</title>
+    <link rel="stylesheet" href="stylesB.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="https://portales.bancochile.cl/uploads/000/035/565/2ca8e2c5-606c-47f4-80ef-03bec528775d/original/bch-inverse.svg" alt="Banco de Chile">
+            </div>
+        </header>
+        <main class="main-content">
+            <h1>Realizar Transferencia</h1>
+            <form class="transfer-form">
+                <div class="step">
+                    <h2>Paso 1 de 3: Selección de cuenta origen</h2>
+                    <div class="form-group">
+                        <label for="origen">Cuenta Origen:</label>
+                        <select id="origen" name="origen" required>
+                            <option value="">Seleccione cuenta</option>
+                            <option value="cuenta1">Cuenta Corriente - 12345678</option>
+                            <option value="cuenta2">Cuenta Vista - 87654321</option>
+                        </select>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="next-step">Siguiente</button>
+                    </div>
+                </div>
+                <div class="step" style="display:none;">
+                    <h2>Paso 2 de 3: Selección de cuenta destino</h2>
+                    <div class="form-group">
+                        <label for="destino">Cuenta Destino:</label>
+                        <select id="destino" name="destino" required>
+                            <option value="">Seleccione cuenta</option>
+                            <option value="cuenta4">Andrea - Cuenta Corriente - 78965412</option>
+                            <option value="cuenta4">Claudia - Cuenta Vista - 12354687</option>
+                            <option value="cuenta4">Diego - Cuenta Vista - 98765432</option>
+                            <option value="cuenta3">Pedro - Cuenta Corriente - 23456789</option>
+                            <option value="cuenta4">Pedro - Cuenta Vista - 74125896</option>
+                            <option value="cuenta4">Juan - Cuenta Vista - 36985214</option>
+                        </select>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="prev-step">Atrás</button>
+                        <button type="button" class="next-step">Siguiente</button>
+                    </div>
+                </div>
+                <div class="step" style="display:none;">
+                    <h2>Paso 3 de 3: Ingreso de monto y comentario</h2>
+                    <div class="form-group">
+                        <label for="monto">Monto:</label>
+                        <input type="number" id="monto" name="monto" placeholder="Ingrese el monto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comentario">Comentario (Opcional):</label>
+                        <input type="text" id="comentario" name="comentario" placeholder="Ingrese un comentario">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="prev-step">Atrás</button>
+                        <button type="submit">Realizar Transferencia</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+

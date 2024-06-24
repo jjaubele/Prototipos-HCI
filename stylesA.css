@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003da5;
+    padding: 20px;
+    color: white;
+}
+
+.header .logo img {
+    width: 150px;
+}
+
+.main-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.main-content h1 {
+    font-size: 24px;
+    color: #003da5;
+    margin-bottom: 20px;
+}
+
+.transfer-form .form-group {
+    margin-bottom: 15px;
+}
+
+.transfer-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.transfer-form input[type="text"],
+.transfer-form input[type="number"],
+.transfer-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+}
+
+.transfer-form button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #003da5;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
